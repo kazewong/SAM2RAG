@@ -2,8 +2,3 @@ FROM nvcr.io/nvidia/pytorch:25.06-py3
 
 WORKDIR /app
 
-RUN git clone https://github.com/facebookresearch/sam2.git
-
-WORKDIR /app/sam2
-
-RUN pip install -e .
