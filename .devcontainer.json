@@ -1,8 +1,4 @@
 {
   "name": "Sam2 RAG Dev Container",
-  "customizations": {
-    "devpod": {
-      "prebuildRepository": "docker.io/kazewong/uv-pytorch:1.0"
-    }
-  }
+  "image": "docker.io/kazewong/uv-pytorch:1.0"
 }
