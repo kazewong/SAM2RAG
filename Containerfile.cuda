@@ -1,6 +1,6 @@
 FROM pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime
 
-curl -LsSf https://astral.sh/uv/install.sh | sh
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 WORKDIR /home
 
