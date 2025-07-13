@@ -1,4 +1,6 @@
 {
   "name": "Sam2 RAG Dev Container",
-  "image": "docker.io/kazewong/uv-pytorch:1.0"
+  "build": {
+	  "dockerfile": "Containerfile.test"
+  }
 }
