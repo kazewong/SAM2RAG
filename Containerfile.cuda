@@ -1,6 +1,7 @@
+FROM ghcr.io/astral-sh/uv:python3.12-bookworm as uv-source
 FROM pytorch/pytorch:2.7.1-cuda12.8-cudnn9-runtime
 
-RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+COPY --from=uv-source / /
 
 WORKDIR /home
 

@@ -1,6 +1,8 @@
 {
   "name": "Sam2 RAG Dev Container",
-  "build": {
-    "dockerfile": "Containerfile.cuda"
+  "customizations": {
+    "devpod": {
+      "prebuildRepository": "docker.io/kazewong/uv-pytorch:1.0"
+    }
   }
 }
