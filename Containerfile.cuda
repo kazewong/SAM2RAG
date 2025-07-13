@@ -4,12 +4,3 @@ RUN apt-get update && apt-get install -y curl
 
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
-WORKDIR /home
-
-RUN git clone https://github.com/facebookresearch/sam2.git
-RUN git clone git@github.com:kazewong/SAM2RAG.git
-
-WORKDIR /home/SAM2RAG
-
-RUN uv sync
-RUN uv pip install -e /home/sam2/
